@@ -1,0 +1,6 @@
+* The differences between Process and Thread:
+- For thread: you must create a function for a thread to execute
+- For thread: you can only create a thread per time. However, for process, each time you call fork() -> there will be 2 processes.
+- Each process has different process id (getpid)
+- A process can contain multiple threads (Not the opposite). 
+- Address space: With process, we can create 2 different variables and we can edit them individually. With threads, all the variable in the same place. All threads can access the same variable -> Trade off 
